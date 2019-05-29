@@ -14,8 +14,8 @@ hash_behaviour = merge
 ## Install
 Just add the role to your ``requirements.yml`` file:
 ```yaml
-- src: https://github.com/feffi/ansible-macos-ohmyzsh.git
-  name: feffi.macos-ohmyzsh
+- src: https://github.com/uschti/ansible-macos-ohmyzsh.git
+  name: uschti.macos-ohmyzsh
 ```
 
 ## Role Variables
@@ -71,14 +71,14 @@ None.
             custom: "$ZSH/custom"
             plugins: "git"
       roles:
-        - { role: feffi.macos-ohmyzsh }
+        - { role: uschti.macos-ohmyzsh }
 ```
 Or with local parameters:
 
 ```yaml
     - hosts: all
       roles:
-        - { role: feffi.macos-ohmyzsh,
+        - { role: uschti.macos-ohmyzsh,
             macos_ohmyzsh: {
               # Set zsh as default shell
               default: true,
